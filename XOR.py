@@ -8,7 +8,7 @@ from torch.autograd import Variable
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(2, 50) # 2 Input noses, 50 in middle layers
+        self.fc1 = nn.Linear(2, 50) # 2 Input nodes, 50 in middle layers
         self.fc2 = nn.Linear(50, 1) # 50 middle layer, 1 output nodes
 	self.rl1 = nn.ReLU()
 	self.rl2 = nn.ReLU()
